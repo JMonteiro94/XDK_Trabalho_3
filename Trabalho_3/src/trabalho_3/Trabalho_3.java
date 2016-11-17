@@ -28,7 +28,6 @@ public class Trabalho_3 {
         xdk1_reading_1.add(32);
         xdk=new XDK(iot,xdk1_reading_1);
         
-        
         Vector<Integer> xdk1_reading_2= new Vector<>();
         xdk1_reading_2.add(22);
         xdk1_reading_2.add(24);

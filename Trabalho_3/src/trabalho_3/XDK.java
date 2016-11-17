@@ -28,5 +28,6 @@ public class XDK extends Thread{
             
         //view.update(1,valores);
         ws.update(1,valores);
+        
     }
 }
