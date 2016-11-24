@@ -119,8 +119,8 @@ public class WeatherStation implements WeatherObserver {
                 // ignore ;
                 break;
         }
-        view=new View(temperatura,humidade,pressao_atm,audio,luminosidade);
-        view.update(1,values);
+        //view=new View(temperatura,humidade,pressao_atm,audio,luminosidade);
+        //view.update(1,values);
     }
 
 /*

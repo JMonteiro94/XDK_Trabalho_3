@@ -17,17 +17,20 @@ public class XDK extends Thread{
     WeatherStation ws;
     Vector<Integer> valores;
             
-    public XDK(WeatherStation ws,Vector<Integer> valores){
-        this.view=view;
+    public XDK(WeatherStation ws){
         this.ws=ws;
-        this.valores=valores;
     }
-    
-    @Override
-    public void run() {
+   
+    //@Override
+    public void updateModel(Vector<Integer> valores) {
             
         //view.update(1,valores);
         ws.update(1,valores);
         
+    }
+    
+    public void resetView(){
+        view=new View(ws.temperatura,ws.humidade,ws.pressao_atm,ws.audio,ws.luminosidade);
+        view.update(1,valores);
     }
 }
